@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Person details</title>
+  <style>
+    h1 {text-align: center;}
+    ul {text-align: center;}
+  </style>
+</head>
+<body style="background-color:grey;">
+<h1>{{ .Firstname }} {{ .Lastname }}</h1>
+<ul>
+  {{ .Gender }}<br>
+  {{ .Age }}<br>
+  {{ .Comment }}
+</ul>
+</body>
+</html>
