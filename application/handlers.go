@@ -11,7 +11,8 @@ func homePage(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		fmt.Println(err)
 	}
-	t.Execute(w, nil)
+
+	t.Execute(w, formFillUp)
 }
 
 func formFillUp(w http.ResponseWriter, r *http.Request) {
@@ -46,10 +47,10 @@ func getResponse(w http.ResponseWriter, r *http.Request) {
 	}
 	t.Execute(w, myValues)
 }
-func getRequest(w http.ResponseWriter, r *http.Request) {
-	t, err := template.ParseFiles("getrequest.html")
-	if err != nil {
-		fmt.Println(err)
-	}
-	t.Execute(w, nil)
-}
+//func getRequest(w http.ResponseWriter, r *http.Request) {
+//	t, err := template.ParseFiles("getrequest.html")
+//	if err != nil {
+//		fmt.Println(err)
+//	}
+//	t.Execute(w, nil)
+//}
