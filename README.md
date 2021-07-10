@@ -15,4 +15,4 @@ Follow the instructions [here](https://golang.org/doc/install)
 3. Build the application i.e. compile the code `go build`
 4. Execute the binary `./application`
 5. Open this [link](http://localhost/)
-6. Version 1.0.0
+6. Version 2.0.0
