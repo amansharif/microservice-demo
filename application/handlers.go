@@ -47,6 +47,7 @@ func getResponse(w http.ResponseWriter, r *http.Request) {
 	}
 	t.Execute(w, myValues)
 }
+
 //func getRequest(w http.ResponseWriter, r *http.Request) {
 //	t, err := template.ParseFiles("getrequest.html")
 //	if err != nil {

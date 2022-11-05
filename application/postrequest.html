@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Enter Details</title>
+    <style>
+        body {text-align: center;}
+    </style>
 </head>
 {{if .Success}}
-<h1>Thanks for your inputs</h1>
+<h1>Thank you for entering your details</h1>
+<button onclick="location.href='http://localhost/'"> HOME </button>
 {{else}}
 <body style="background-color:grey;">
 <h1>FEEDBACK FORM</h1>
